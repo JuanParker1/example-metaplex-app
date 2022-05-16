@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "check-types": "tsc --noEmit",
-    "ci": "yarn lint && yarn check-types && yarn build",
+    "ci": "yarn lint && yarn check-types",
     "export": "next export"
   },
   "dependencies": {
