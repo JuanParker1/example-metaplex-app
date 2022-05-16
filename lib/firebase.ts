@@ -2,7 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDfn-rhZxZB4SfAVVKtd87m7hm0UgpAMrU',
+  apiKey: process.env.NEXT_FIREBASE_API,
   authDomain: 'example-metaplex.firebaseapp.com',
   projectId: 'example-metaplex',
   storageBucket: 'example-metaplex.appspot.com',
