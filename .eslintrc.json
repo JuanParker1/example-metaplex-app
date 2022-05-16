@@ -1,0 +1,44 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always-and-inside-groups"
+      }
+    ],
+    "@typescript-eslint/consistent-type-imports": "error",
+    "unicorn/prevent-abbreviations": [
+      "error",
+      {
+        "allowList": {
+          "Props": true
+        }
+      }
+    ],
+    "array-callback-return": [
+      "error",
+      {
+        "allowImplicit": true
+      }
+    ],
+    "unicorn/no-useless-undefined": ["error", { "checkArguments": false }]
+  },
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "unicorn/prefer-module": "off",
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    }
+  ]
+}
