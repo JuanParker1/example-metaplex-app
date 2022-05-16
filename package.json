@@ -13,7 +13,7 @@
     "lint": "eslint 'packages/*/{src,test}/**/*.{ts,tsx}'",
     "check-types": "tsc --noEmit",
     "ci": "yarn lint && yarn check-types",
-    "export": "next export",
+    "export": "lerna run --scope web export",
     "bootstrap": "lerna link && lerna bootstrap",
     "build": "lerna run build --ignore=token-entangler --ignore=candy-machine-ui",
     "build-web": "lerna run build --stream --scope @oyster/common --scope web",
